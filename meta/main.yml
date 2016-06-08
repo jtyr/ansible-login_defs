@@ -1,0 +1,18 @@
+---
+
+galaxy_info:
+  author: Jiri Tyr
+  description: Role which helps to manage the /etc/login.defs file.
+  license: MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  categories:
+    - system
+dependencies:
+  - config_encoder_filters

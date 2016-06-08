@@ -1,0 +1,8 @@
+---
+
+- name: Create the login.defs file
+  template:
+    src: login.defs.j2
+    dest: "{{ login_defs_file }}"
+  tags:
+    - login_defs_config

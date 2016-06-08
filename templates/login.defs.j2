@@ -1,0 +1,3 @@
+{{ ansible_managed | comment }}
+
+{{ login_defs_config | encode_ini(delimiter="\t", ucase_prop=true) }}
