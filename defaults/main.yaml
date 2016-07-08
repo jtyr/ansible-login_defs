@@ -14,7 +14,7 @@ login_defs_config_uid_max: 60000
 login_defs_config_gid_min: 500
 login_defs_config_gid_max: 60000
 login_defs_config_create_home: "yes"
-login_defs_config_umask: 077
+login_defs_config_umask: "077"
 login_defs_config_usergroups_enab: "yes"
 login_defs_config_encrypt_method: MD5
 login_defs_config_md5_crypt_enab: "yes"
