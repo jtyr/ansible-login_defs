@@ -73,6 +73,7 @@ login_defs_config_create_home: "yes"
 login_defs_config_umask: "077"
 login_defs_config_usergroups_enab: "yes"
 login_defs_config_encrypt_method: MD5
+login_defs_config_fail_delay: 5
 login_defs_config_md5_crypt_enab: "yes"
 
 # Default configuration
@@ -90,6 +91,7 @@ login_defs_config__default:
   umask: "{{ login_defs_config_umask }}"
   usergroups_enab: "{{ login_defs_config_usergroups_enab }}"
   encrypt_method: "{{ login_defs_config_encrypt_method }}"
+  fail_delay: "{{ login_defs_config_fail_delay }}"
   md5_crypt_enab: "{{ login_defs_config_md5_crypt_enab }}"
 
 # Custom configuration
