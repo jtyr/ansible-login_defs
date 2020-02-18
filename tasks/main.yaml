@@ -4,5 +4,8 @@
   template:
     src: login.defs.j2
     dest: "{{ login_defs_file }}"
+    owner: "{{ login_defs_owner }}"
+    group: "{{ login_defs_group }}"
+    mode: "{{ login_defs_mode }}"
   tags:
     - login_defs_config

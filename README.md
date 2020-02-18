@@ -58,6 +58,10 @@ List of variables used by the role:
 ```
 # Location of the login.defs file
 login_defs_file: /etc/login.defs
+# Owner/group/mode of the login.defs file
+login_defs_owner: root
+login_defs_group: root
+login_defs_mode: 0644
 
 # Default values of the default configuration
 login_defs_config_mail_dir: /var/spool/mail
