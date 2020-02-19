@@ -15,7 +15,7 @@ Please report any issues or send PR.
 Examples
 --------
 
-```
+```yaml
 ---
 
 # Example of how to use it without any changes
@@ -55,10 +55,11 @@ Role variables
 
 List of variables used by the role:
 
-```
+```yaml
 # Location of the login.defs file
 login_defs_file: /etc/login.defs
-# Owner/group/mode of the login.defs file
+
+# Permissions of the login.defs file
 login_defs_owner: root
 login_defs_group: root
 login_defs_mode: 0644
@@ -101,10 +102,8 @@ login_defs_config__custom: {}
 
 # Final cofiguration
 login_defs_config: "{{
-    login_defs_config__default.update(login_defs_config__custom)
-  }}{{
-    login_defs_config__default
-  }}"
+    login_defs_config__default | combine(
+    login_defs_config__custom) }}"
 ```
 
 
